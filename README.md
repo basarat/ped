@@ -12,9 +12,9 @@ Get it:
 npm install ped -g
 ```
 
-Run it: 
+Run it from the directory you want to serve up: 
 ```
-ped -p .
+ped
 ```
 
 Now open it in your favorite browser (pssst `chrome`) at the URL mentioned in your console.

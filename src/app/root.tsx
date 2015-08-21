@@ -1,7 +1,7 @@
 import * as React from "react";
-import {BaseComponent, RaisedButton, AppBar, MenuItem, LeftNav} from "./material-ui";
-import * as layout  from "layoutjs";
-
+import {BaseComponent, RaisedButton, AppBar, MenuItem, LeftNav} from "./ui";
+import * as csx from "csx";
+import {TabsContainer} from "./tabsContainer";
 
 let menuItems = [
     { route: 'get-started', text: 'Get Started' },
@@ -15,7 +15,7 @@ let menuItems = [
     },
 ];
 
-export class RootComponent extends BaseComponent<{}, {}>{
+export class Root extends BaseComponent<{}, {}>{
 
     constructor(props: {}) {
         super(props);
@@ -24,21 +24,19 @@ export class RootComponent extends BaseComponent<{}, {}>{
     refs: { [string: string]: any; leftNav?: any; }
 
     toggle = () => {
-        console.log('heres');
         this.refs.leftNav.toggle();
     }
 
     render() {
         return <div>
                 <AppBar
-                title="Programmer's Editor"
-                iconClassNameRight="muidocs-icon-navigation-expand-more"
-                onLeftIconButtonTouchTap={this.toggle}
+                    title="Programmer's Editor"
+                    iconClassNameRight="muidocs-icon-navigation-expand-more"
+                    onLeftIconButtonTouchTap={this.toggle}
                 />
                 <LeftNav ref="leftNav" docked={false} menuItems={menuItems} />
-                
-                
-                
+
+                <TabsContainer/>
             </div>;
     }
 
