@@ -8,9 +8,9 @@ export interface ComponentProps {
     url: string;
 }
 
-export interface Tab<P extends ComponentProps> {
+export interface Tab {
     getTitle(): string;
-    component: { new (p: P): ui.React.Component<any, any>; };
+    component: { new <P extends ComponentProps>(p: P): ui.React.Component<P, any>; };
 }
 
 /** If no filepath is provided `cwd` is used */
