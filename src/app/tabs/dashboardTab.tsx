@@ -1,4 +1,4 @@
-import * as ui from "./ui";
+import * as ui from "../ui";
 import * as React from "react";
 import * as tab from "./tab";
 

@@ -19,7 +19,7 @@
         "!./node_modules/**/*"
     ],
     "files": [
-        "./app/tab.ts",
+        "./app/tabs/tab.ts",
         "./common/utils.ts",
         "./server.ts",
         "./server/cookies.ts",
@@ -33,11 +33,13 @@
         "./typings/react/react.d.ts",
         "./typings/serve-static/serve-static.d.ts",
         "./typings/tsd.d.ts",
-        "./app/codeTab.tsx",
-        "./app/dashboardTab.tsx",
         "./app/main.tsx",
         "./app/root.tsx",
-        "./app/tabsContainer.tsx",
+        "./app/styles/styles.tsx",
+        "./app/styles/theme.tsx",
+        "./app/tabs/codeTab.tsx",
+        "./app/tabs/dashboardTab.tsx",
+        "./app/tabs/tabsContainer.tsx",
         "./app/ui.tsx"
     ]
 }

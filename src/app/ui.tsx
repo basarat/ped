@@ -5,6 +5,7 @@
 export import React = require("react");
 export import Radium = require('radium');
 export import csx = require('csx');
+import * as theme from "./styles/theme";
 
 // needed for material UI
 let injectTapEventPlugin = require("react-tap-event-plugin");
@@ -18,6 +19,7 @@ export let {RaisedButton, AppBar, IconButton, MenuItem, LeftNav, Tabs, Tab} = mu
 // http://material-ui.com/#/get-started : 
 // Please note that since v0.8.0, you also need to define a theme for components to start working.
 let ThemeManager = new mui.Styles.ThemeManager();
+ThemeManager.setTheme(theme.DarkTheme);
 function getChildContext() {
     return {
         muiTheme: ThemeManager.getCurrentTheme()

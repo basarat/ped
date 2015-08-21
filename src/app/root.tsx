@@ -1,7 +1,7 @@
 import * as React from "react";
 import {BaseComponent, RaisedButton, AppBar, MenuItem, LeftNav} from "./ui";
 import * as csx from "csx";
-import {TabsContainer} from "./tabsContainer";
+import {TabsContainer} from "./tabs/tabsContainer";
 
 let menuItems = [
     { route: 'get-started', text: 'Get Started' },

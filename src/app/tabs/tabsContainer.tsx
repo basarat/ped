@@ -1,6 +1,6 @@
-import * as ui from "./ui";
+import * as ui from "../ui";
 import * as React from "react";
-import {csx, Tabs} from "./ui";
+import {csx, Tabs} from "../ui";
 import * as tab from "./tab";
 import {DashboardTab} from "./dashboardTab";
 
@@ -9,7 +9,6 @@ export interface Props {
 }
 
 export interface State {
-    selectedTab: tab.Tab;
     tabs: tab.Tab[];
 }
 
@@ -22,8 +21,7 @@ export class TabsContainer extends ui.BaseComponent<Props, State>{
         let dashboard: tab.Tab = DashboardTab;
 
         this.state = {
-            selectedTab: dashboard,
-            tabs: [dashboard]
+            tabs: [dashboard, dashboard]
         };
     }
 
@@ -32,11 +30,11 @@ export class TabsContainer extends ui.BaseComponent<Props, State>{
 
     render() {
 
-        let tabs = this.state.tabs.map(T=> <ui.Tab key="sd" label={T.getTitle()}>
+        let tabs = this.state.tabs.map((T, index) => <ui.Tab key={index} label={T.getTitle() }>
             <T.Component/>
-        </ui.Tab>);
+            </ui.Tab>);
 
-        return <Tabs>
+        return <Tabs initialSelectedIndex={0}>
                 {tabs}
             </Tabs>;
     }
