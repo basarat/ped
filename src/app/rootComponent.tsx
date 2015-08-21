@@ -10,7 +10,7 @@ let menuItems = [
     { type: MenuItem.Types.SUBHEADER, text: 'Resources' },
     {
         type: MenuItem.Types.LINK,
-        payload: 'https://github.com/basarat/cab',
+        payload: 'https://github.com/basarat/ped',
         text: 'GitHub'
     },
 ];
@@ -31,7 +31,7 @@ export class RootComponent extends BaseComponent<{}, {}>{
     render() {
         return <div>
                 <AppBar
-                title="Code Analysis Butler"
+                title="Programmer's Editor"
                 iconClassNameRight="muidocs-icon-navigation-expand-more"
                 onLeftIconButtonTouchTap={this.toggle}
                 />
