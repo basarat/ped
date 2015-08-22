@@ -1,10 +1,12 @@
-# Programmer's Editor
+# Programmer's Editor 🌹
+![programmer's editor](https://raw.githubusercontent.com/basarat/ped/master/resources/icon.png)
+
 Gives in depth analysis and a dev environment for TypeScript that is: 
 
 * easy to install
 * easy to use
 
-🌹
+Why TypeScript? [Here are few reasons](http://basarat.gitbooks.io/typescript/content/docs/why-typescript.html). Also you can build *complete* applications with a single language > this means you can have dev tools (like this) that can understand *all your project*.
 
 ## Usage 
 Get it: 
@@ -23,4 +25,3 @@ Now open it in your favorite browser (pssst `chrome`) at the URL mentioned in yo
 * Works the same on the *server* as your local file system. Remote editing FTW!
 * Heck..you can check in the IDE as a `devDependency`!
 * Like cloud9 ... but on your server!
-* Cause it was fun to do, and demos a lot of Tech in combination and I keep getting questions about how to do these in a neat workflow: `TypeScript`,`webpack`,`react`,`radium`. Everybody needs a `ped` project 🐱

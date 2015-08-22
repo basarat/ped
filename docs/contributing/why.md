@@ -1,0 +1,2 @@
+Some reasons that didn't make the cut for the home page : 
+ * Cause it was fun to do, and demos a lot of Tech in combination and I keep getting questions about how to do these in a neat workflow: `TypeScript`,`webpack`,`react`,`radium`. Everybody needs a `ped` project 🐱
