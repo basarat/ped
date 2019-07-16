@@ -1,4 +1,7 @@
 # Programmer's Editor 🌹
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/basarat/ped.svg)](https://greenkeeper.io/)
+
 ![programmer's editor](https://raw.githubusercontent.com/basarat/ped/master/resources/icon.png)
 
 Gives in depth analysis and a dev environment for TypeScript that is: 
