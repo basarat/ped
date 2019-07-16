@@ -31,21 +31,21 @@
   "homepage": "https://github.com/basarat/ped#readme",
   "dependencies": {
     "cookie-parser": "^1.3.5",
-    "express": "4.13.0",
+    "express": "4.17.1",
     "layoutjs": "^1.0.2",
-    "material-ui": "^0.10.4",
-    "normalize.css": "^3.0.3",
-    "ntypescript": "1.201508200635.1",
-    "radium": "^0.13.7",
-    "react": "^0.13.3",
-    "react-tap-event-plugin": "^0.1.7"
+    "material-ui": "^0.20.2",
+    "normalize.css": "^8.0.1",
+    "ntypescript": "1.201706190042.1",
+    "radium": "^0.25.2",
+    "react": "^16.8.6",
+    "react-tap-event-plugin": "^3.0.3"
   },
   "devDependencies": {
-    "css-loader": "^0.16.0",
-    "csx": "^1.0.3",
+    "css-loader": "^3.0.0",
+    "csx": "^9.1.0",
     "http-proxy": "^1.11.1",
-    "style-loader": "^0.12.3",
-    "webpack": "^1.11.0",
-    "webpack-dev-server": "^1.10.1"
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-dev-server": "^3.7.2"
   }
 }
