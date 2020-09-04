@@ -37,7 +37,7 @@
     "normalize.css": "^3.0.3",
     "ntypescript": "1.201508200635.1",
     "radium": "^0.13.7",
-    "react": "^0.13.3",
+    "react": "^0.14.9",
     "react-tap-event-plugin": "^0.1.7"
   },
   "devDependencies": {
